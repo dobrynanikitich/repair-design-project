@@ -1,0 +1,13 @@
+@import './variables';
+
+.commonBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: $colorYellowSand;
+    color: $colorWhite;
+
+    width: 161px; 
+    height: 37px;
+}

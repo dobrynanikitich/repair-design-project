@@ -1,0 +1,32 @@
+@import './variables';
+@import './buttons';
+
+.mainHeader {
+    width: 100%;
+    min-height: 82px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    font-family: 'Roboto, Lato, sans-serif';
+    font-size: $fontSize;
+
+    background-color: $colorBlack;
+    h1 {
+        color: $colorYellowSand;
+        font-size: $fontSize;   
+    }
+    nav {
+        width: 40%;
+    }
+    a {
+        color: $colorYellowSand
+    }
+    .commonNav {
+        display: flex;
+        justify-content: space-between;
+    
+        color: $colorWhite;
+    }
+}
