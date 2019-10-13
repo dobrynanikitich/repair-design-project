@@ -15,6 +15,28 @@ module.exports = {
           fallback: 'style-loader',
           use: ['css-loader', 'sass-loader']
         })
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        use: [
+          {
+              loader: 'file-loader?name=./assets/fonts/Roboto/[name].[ext]'
+          },
+          {
+              loader: 'file-loader?name=./assets/fonts/Lato/[name].[ext]'
+          },
+          {
+              loader: 'file-loader?name=./assets/fonts/YesevaOne/[name].[ext]'
+          }
+        ]
+      },
+      {
+        test: /\.png$/,
+        use: [
+          {
+            loader: 'file-loader?name=./assets/images/[name].[ext]'
+        }
+        ]
       }
     ]
   },

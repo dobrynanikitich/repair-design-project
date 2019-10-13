@@ -1,0 +1,88 @@
+@import './partials/buttons';
+@import './partials/variables';
+
+.calculateAndSubmitOrderSection {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    height: 710px;
+}
+
+.instagramLinkSection {
+    width: 5.7%;
+    height: 100%;
+
+    writing-mode: tb;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    background: $colorBlack;
+
+    font-family: 'Roboto', 'Lato', sans-serif;
+    font-size: $fontSize;
+    a {
+        color: $colorYellowSand;
+        margin-bottom: 15px;
+    }
+    .decorativeStroke {
+        width: 1px;
+        height: 35px;
+        background: $colorYellowSand;
+    }
+}
+
+.turnkeyRepairSection {
+    width: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7) ), url('../../assets/images/turnkeyRepair.png');
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+
+    h2 {
+        margin: 0;
+
+        max-width: 676px;
+        color: $colorWhite;
+        line-height: 1.2;
+        text-transform: uppercase;
+
+        font-family: 'Yeseva One', serif;
+        font-size: 40px;
+        .colorYellowSand {
+            color: $colorYellowSand;
+        }
+    }
+
+    p {
+        max-width: 514px;
+
+        color: $colorWhite;
+        font-family: 'Roboto', 'Lato', sans-serif;
+        font-size: 22px;
+    }
+
+    .btnsWrapper {
+        box-sizing: border-box;
+
+        display: flex;
+        .calculateBtn,
+        .submitCalculatedBtn {
+            width: 207px;
+            height: 51px;
+
+            font-weight: normal;
+            font-size: 13px;
+            margin-right: 20px; 
+        }
+        .submitCalculatedBtn {
+            background: transparent;
+            border: 1px solid #ffffff;
+        }
+    }
+}

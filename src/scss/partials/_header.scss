@@ -4,29 +4,40 @@
 .mainHeader {
     width: 100%;
     min-height: 82px;
+    box-sizing: border-box;
+    padding-left: 20px;
 
     display: flex;
     align-items: center;
     justify-content: space-around;
 
-    font-family: 'Roboto, Lato, sans-serif';
-    font-size: $fontSize;
-
     background-color: $colorBlack;
     h1 {
+        font-family: 'Roboto', 'Lato', sans-serif;
         color: $colorYellowSand;
         font-size: $fontSize;   
     }
-    nav {
-        width: 40%;
-    }
     a {
-        color: $colorYellowSand
+        color: $colorYellowSand;
+        border-bottom: 1px solid $colorYellowSand;
     }
     .commonNav {
         display: flex;
         justify-content: space-between;
-    
+
+        font-family: 'Roboto', 'Lato', sans-serif;
+        font-size: $fontSize;
         color: $colorWhite;
     }
+    .commonNav li {
+        padding: 1.5%;
+        &:hover {
+            cursor: pointer;
+            color: $colorYellowSand;
+        }
+    }
+}
+
+.active {
+    color: $colorYellowSand;
 }

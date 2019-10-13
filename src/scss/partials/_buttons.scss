@@ -7,7 +7,15 @@
     
     background-color: $colorYellowSand;
     color: $colorWhite;
+    font-weight: bold;
+
+    border: none; 
 
     width: 161px; 
     height: 37px;
+    &:hover {
+        cursor: pointer;
+        background: #ffffff;
+        color: $colorYellowSand;
+    }
 }
