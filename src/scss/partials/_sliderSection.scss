@@ -1,0 +1,128 @@
+@import './partials/buttons';
+@import './partials/variables';
+@import './calculateTheCost';
+
+.sliderSection {
+    width: 100%;
+    display: flex;
+
+    box-sizing: border-box;
+
+    padding-left: 5.1%;
+    background-color: $colorBlack;
+    .completedTaskDesc {
+        display: flex;
+        flex-direction: column;
+
+        width: 29%;
+        padding-top: 177px;
+        .projectDescription {
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 200px;
+        } li {
+            width: 50%;
+            height: 70px;
+
+            display: flex;
+            list-style: none;
+            flex-direction: column;
+
+            font-size: 18px;
+            font-family: 'Yeseva One', serif;
+            color: $colorYellowSand;
+            span {
+                font-size: 14px;
+                font-family: 'Roboto', 'Lato', sans-serif;
+                color: $colorWhite; 
+            }
+        } .blockDesc {
+            margin-bottom: 40px;
+            line-height: 1.5;
+            color: $colorWhite;
+        }
+        .titleSliderSectionWrapper {
+            margin: 0;
+            font-family: 'Yeseva One', serif;
+            color: $colorYellowSand;
+            font-size: 27px;
+
+            display: flex;
+            .decorativeStroke {
+                width: 35px;
+                height: 1px;
+                background: $colorYellowSand;
+
+                width: 83px;
+                height: 1px;
+                margin-top: 44px;
+            }
+            p {
+                margin: 0;
+            }
+        }
+        .sliderPageArrows {
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+            .paginationDots {
+                display: flex;
+                width: 30%;
+                justify-content: space-between;
+            }
+        }
+    }
+    .sliderBlockSection {
+        width: 71%;
+
+        box-sizing: border-box;
+        padding-top: 97px;
+        .projectsCollection {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+
+            margin-bottom: 44px;
+            padding-left: 14%;
+            box-sizing: border-box;
+
+            font-family: 'Yeseva One', serif;
+            font-size: $fontSize;
+            color: $colorGray;
+            li {
+                height: 22px;
+                margin-right: 5%;
+            }
+            .activeProject {
+                color: $colorYellowSand;
+                border-bottom: 1px solid $colorYellowSand;
+            }
+        }
+        .slider {
+            position: relative;
+            display: flex; 
+            padding-left: 12%;
+            .nextSlideBtn {
+                width: 54px;
+                height: 54px;
+                border-radius: 50%;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                background-color: $colorYellowSand;
+
+                position: absolute;
+                right: 5px;
+                top: 44%;
+            }
+            div {
+                margin-right: 30px;
+            }
+        }
+    }
+}

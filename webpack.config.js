@@ -35,7 +35,7 @@ module.exports = {
         use: [
           {
             loader: 'file-loader?name=./assets/images/[name].[ext]'
-        }
+          }
         ]
       }
     ]
