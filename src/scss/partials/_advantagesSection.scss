@@ -1,0 +1,129 @@
+@import './variables'; 
+
+.advantagesSection {
+    width: 100%;
+    padding-right: 99px;
+    box-sizing: border-box;
+    display: flex;
+    .advantagesList {
+        width: 830px;
+        height: 658px; 
+        background: url('../../assets/images/backgroundAdvantagesSection.png') no-repeat;
+    }
+    .formWrapper {
+        padding: 45px 40px;
+        form {
+            width: 506px;
+            height: 509px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: white;
+            background-color: black;
+            padding: 20px 46px;
+            box-sizing: border-box;
+            h2 {
+                text-align: center;
+            }
+            div {
+                display: flex;
+                flex-direction: column;
+                label {
+                    color: gray;
+                    padding-bottom: 10px;
+                }
+            }
+            .agreeInputWrapper {
+                display: flex;
+                flex-direction: row;
+                label {
+                    color: white;
+                }
+            }
+            input[type='text'] {
+                border: none;
+                background: black;
+                border-bottom: 1px solid gray;
+                color: white;
+            }
+            ::-webkit-input-placeholder {
+                color: white;
+                font-size: 15px;
+            }
+            .containerLabel {
+                display: block;
+                position: relative;
+                padding-left: 35px;
+                margin-bottom: 12px;
+                cursor: pointer;
+                font-size: 14px;
+                user-select: none;
+            }
+            .containerLabel input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+            .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 18px;
+                width: 18px;
+                background-color: white;
+                border: 1px solid $colorYellowSand;   
+            }
+            .container:hover input ~ .checkmark {
+                background-color: gray;
+              }
+        
+            .container input:checked ~ .checkmark {
+                background-color: $colorYellowSand;
+          }
+          
+            // .checkmark:after {
+            //     content: "";
+            //     position: absolute;
+            //     display: none;
+            // }
+          
+            .container input:checked ~ .checkmark:after {
+                display: block;
+            }
+          
+            .container .checkmark:after {
+                left: 9px;
+                top: 5px;
+                width: 5px;
+                height: 10px;
+                border: solid white;
+                border-width: 0 3px 3px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+            input[type='submit'] {
+                width: 213px;
+                height: 51px;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $colorYellowSand;
+                border: none;
+                color: white;
+                align-self: flex-end;
+            }
+        }
+        .discountBlock {
+            display: flex;
+            padding: 20px 20px;
+            color: $colorYellowSand;
+            p {
+                font-size: 25px;
+            }
+        }
+    }
+}

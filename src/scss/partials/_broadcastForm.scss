@@ -1,0 +1,113 @@
+@import './variables';
+@import './buttons';
+
+.getBroadcastLinkFormSection {
+    padding-top: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 140px;
+    svg {
+        padding-bottom: 30px;
+    }
+    p {
+        width: 570px;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+}
+
+.userDataForms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    div {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 51px;
+    }
+    .inputWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 235px;
+        input {
+            border: none;
+            border-bottom: 1px solid gray;
+            padding-top: 10px;
+        }
+        label {
+            color: gray; 
+        }
+        ::-webkit-input-placeholder {
+            color: black;
+        }
+    }
+    .submitBtn {
+        width: 200px;
+        background-color: $colorYellowSand;
+        border: none;
+        color: white;
+        font-weight: bold;
+    }
+    .containerLabel {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 14px;
+        user-select: none;
+    }
+    .containerLabel input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 18px;
+        width: 18px;
+        background-color: white;
+        border: 1px solid $colorYellowSand;   
+    }
+    .container:hover input ~ .checkmark {
+        background-color: gray;
+      }
+
+    .container input:checked ~ .checkmark {
+        background-color: $colorYellowSand;
+  }
+  
+    // .checkmark:after {
+    //     content: "";
+    //     position: absolute;
+    //     display: none;
+    // }
+  
+    .container input:checked ~ .checkmark:after {
+        display: block;
+    }
+  
+    .container .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+

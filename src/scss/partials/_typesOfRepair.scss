@@ -1,0 +1,54 @@
+@import './variables';
+
+.typeOfRepair {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 340px;
+    .repairLogoWrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    .worksExampleWrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        li {
+            position: relative;
+            .redecoratingDesc,
+            .overhaulDesc,
+            .designerDesc {
+                position: absolute;
+                top: 285px;
+                left: 25px;
+
+                width: 330px;
+                height: 286px;
+                background-color: white;
+                box-sizing: border-box;
+                padding: 10px 20px;
+                li {
+                    list-style: inside;
+                    color: gray;
+                    line-height: 1.5;
+                }
+            }
+            div {
+                position: absolute;
+                width: 228px;
+                height: 54px;
+                background-color: $colorYellowSand;
+                text-align: center;
+                bottom: -180px;
+                left: 10px;
+                box-sizing: border-box;
+                padding-top: 24px;
+                color: white;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+}
