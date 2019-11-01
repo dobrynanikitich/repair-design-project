@@ -2,18 +2,28 @@
 
 .advantagesSection {
     width: 100%;
-    padding-right: 99px;
+    padding-bottom: 452px;
     box-sizing: border-box;
     display: flex;
     .advantagesList {
-        width: 830px;
+        width: 60%;
         height: 658px; 
         background: url('../../assets/images/backgroundAdvantagesSection.png') no-repeat;
+        img {
+            width: 100%;
+        }
+        @media only screen and (max-width: 986px) {
+            display: none;
+        }
     }
     .formWrapper {
         padding: 45px 40px;
+        width: 33%;
+        @media only screen and (max-width: 986px) {
+            width: 60%;
+        }
         form {
-            width: 506px;
+            width: 100%;
             height: 509px;
             display: flex;
             flex-direction: column;

@@ -1,0 +1,86 @@
+@import './variables';
+
+.examplesOfStylesSection {
+    position: relative;
+    width: 100%;
+    height: 864px;
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('../../assets/images/styleExampleBackground.png');
+    margin-bottom: 35px;
+    ul {
+        padding: 132px 84px;
+        box-sizing: border-box;
+        font-size: 22px;
+        @media only screen and (max-width: 1138px) {
+            padding: 0;
+        }
+        @media only screen and (max-width: 997px) {
+            padding: 20px 84px;
+        }
+        h2 {
+            font-size: 27px;
+            color: $colorYellowSand;
+            margin-bottom: 20px;
+        }
+        li {
+            color: white;
+            line-height: 2.3;
+            cursor: pointer;
+        }
+        .active {
+            color: $colorYellowSand;
+            text-decoration: underline;
+        }
+    }
+    img:nth-child(2) {
+        position: absolute;
+        top: -6%;
+        right: 36%;
+        @media only screen and (max-width: 997px) {
+            display: none;
+        }
+    }
+    img:nth-child(3) {
+        position: absolute;
+        top: -15%;
+        right: 8.5%;
+        @media only screen and (max-width: 1290px) {
+            position: absolute;
+            top: -15%;
+            right: 0;
+        }
+        @media only screen and (max-width: 997px) {
+            display: none;
+        }
+    }
+    img:nth-child(4) {
+        position: absolute;
+        right: 36%;
+        bottom: -4%;
+        @media only screen and (max-width: 997px) {
+            display: none;
+        }
+    }
+    img:nth-child(5) {
+        position: absolute;
+        right: 8.5%;
+        bottom: 4%;
+        @media only screen and (max-width: 1290px) {
+            position: absolute;
+            bottom: 4%;
+            right: 0;
+        }
+        @media only screen and (max-width: 997px) {
+            display: none;
+        }
+    }
+    p {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 20px;
+        padding-bottom: 320px;
+        @media only screen and (max-width: 997px) {
+            display: none;
+        }
+    }
+}

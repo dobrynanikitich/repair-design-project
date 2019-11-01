@@ -1,0 +1,88 @@
+@import './variables';
+
+.ouClientsSection {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 630px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+        color: black;
+        padding-bottom: 15px;
+    }
+    .outClientsLogoWrapper {
+        display: flex;
+        width: 114px;
+        height: 28px;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    .clientsStatistics {
+        color: black;
+        margin: 0;
+        padding: 0;
+        width: 476px;
+        height: 57px;
+        text-align: center;
+    }
+    .ourClientsPhotoWrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        .clientInfo {
+            width: 376px;
+            height: 456px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-sizing: border-box;
+            padding: 5px;
+            position: relative;
+            div {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                .imageWrapper {
+                    padding-right: 20px;
+                }
+                .clientName {
+                    width: 170px;
+                    text-align: left;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+            .clientText {
+                font-size: 12px;
+                width: 360px;
+                line-height: 2.6;
+                color: gray;
+            }
+            .workResultsInfo {
+                width: 293px;
+                height: 54px;
+                background-color: $colorYellowSand;
+                display: flex;
+                position: absolute;
+                top: 0;
+                left: 0; 
+                div {
+                    color: white;
+                    padding: 5px 10px;
+                    svg {
+                        padding-right: 10px;
+                    }
+                }
+                div:nth-child(1) {
+                    width: 50%;
+                    box-sizing: border-box;
+                    border-right: 1px solid white;
+                }
+            }
+        }
+    }
+}

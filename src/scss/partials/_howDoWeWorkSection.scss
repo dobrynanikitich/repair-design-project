@@ -1,0 +1,110 @@
+@import './variables';
+
+.howDoWeWorkSection {
+    width: 100%;
+    height: 612px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .designProjectWrapper {
+        margin-bottom: 55px;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .designProjectSloganSection {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    .worksExampleFlex {
+        width: 85.83%;
+        height: 280px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .worksExample {
+            width: 100%;
+            max-width: 392px;
+            height: 421px;
+            position: relative;
+            ul {
+                background-color: white;
+                padding: 26px 30px 60px 40px;
+                color: gray;
+                p {
+                    color: black;
+                    font-size: 20px;
+                    margin: 0;
+                }
+                li {
+                    list-style: inside;
+                    line-height: 1.7;
+                }
+            }
+        }
+        div:nth-child(1) {
+            background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('../../assets/images/mini.png');
+            ul {
+                position: absolute;
+                top: 284px;
+                left: 33px;
+                padding: 26px 94px 30px 50px;
+            }
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                bottom: -80px;
+                left: 33px;
+                background-color: $colorYellowSand;
+                color: white;
+                width: 228px;
+                height: 56px;
+            }
+        }
+        div:nth-child(2) {
+            background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('../../assets/images/standard.png');
+            ul {
+                position: absolute;
+                top: 284px;
+                left: 30px;
+                padding: 26px 94px 30px 71px;
+            }
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                bottom: -162px;
+                left: 30px;
+                background-color: $colorYellowSand;
+                color: white;
+                width: 228px;
+                height: 56px;
+            }
+        }
+        div:nth-child(3) {
+            background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('../../assets/images/full.png');
+            ul {
+                position: absolute;
+                top: 284px;
+                left: 30px;
+                padding: 26px 36px 30px 34px;
+            }
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                bottom: -297px;
+                left: 30px;
+                background-color: $colorYellowSand;
+                color: white;
+                width: 228px;
+                height: 56px;
+            }
+        }
+    }
+}
