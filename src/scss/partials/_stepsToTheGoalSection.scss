@@ -3,32 +3,49 @@
 .stepsToTheGoalSection {
     width: 100%;
     box-sizing: border-box;
-    padding: 390px 100px 100px 100px;
+    padding: 412px 100px 100px 100px;
 
     display: flex;
     background-color: black;
+    @media only screen and (max-width: 881px) {
+        padding: 412px 0px 100px 0px;
+    }
     .howWeWork {
         width: 200px;
         height: 40px;
         color: white;
-        padding-left: 100px;
     }
     .sliderCountAndDesc {
         display: flex;
         flex-direction: column;
         width: 37%;
+        @media only screen and (max-width: 881px) {
+            width: 100%;
+            align-items: center; 
+        }
         h2 {
+            margin: 0;
             width: 337px;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             color: $colorYellowSand;
             font-size: 30px;
             font-weight: bold;
             box-sizing: border-box;
             padding-bottom: 96px;
+            @media only screen and (max-width: 931px) {
+                padding-bottom: 0;
+            }
+            @media only screen and (max-width: 881px) {
+                width: 100%;
+                justify-content: center;
+            }
             svg {
                 padding-right: 10px;
                 padding-top: 51px;
+                @media only screen and (max-width: 931px) {
+                    display: none;
+                }
             }
         }
         .sliderCount {
@@ -39,11 +56,17 @@
             color: $colorYellowSand;
             padding-bottom: 10px;
             text-transform: uppercase;
+            @media only screen and (max-width: 881px) {
+                text-align: center;
+            }
         }
         p {
-            width: 337px;
+            width: 73.5%;
             height: 220px;
             color: white;
+            @media only screen and (max-width: 881px) {
+                text-align: center;
+            }
         }
         .arrowsSlider {
             width: 287px;
@@ -55,6 +78,9 @@
         width: 63%;
         display: flex;
         flex-direction: column;
+        @media only screen and (max-width: 881px) {
+            display: none; 
+        }
         ul {
             width: 98%;
             display: flex;
@@ -62,8 +88,11 @@
             flex-wrap: wrap;
             justify-content: space-around;
             color: gray;
-            padding-top: 70px;
-            height: 180px;
+            padding-top: 95px;
+            height: 200px;
+            @media only screen and (max-width: 931px) {
+                padding-top: 0;
+            }
             li {
                 width: 33%;
                 display: flex;
@@ -81,6 +110,12 @@
             }
             .activeSliderPage {
                 color: white;
+            }
+        }
+        .sliderPicture {
+            width: 100%;
+            img {
+                width: 100%;
             }
         }
     }

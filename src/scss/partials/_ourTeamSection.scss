@@ -1,11 +1,5 @@
 @import './variables';
 
-.testSection {
-    width: 100%;
-    height: 500px;
-
-}
-
 .outTeamSection {
     width: 100%;
     display: flex;
@@ -17,6 +11,10 @@
     padding-left: 200px;
     padding-right: 200px;
     box-sizing: border-box;
+    @media only screen and (max-width: 1240px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     h3 {
         color: white;
         padding: 0;
@@ -47,18 +45,22 @@
         padding-bottom: 100px;
         .employeeWrapper {
             position: relative;
-            width: 272px;
+            width: 100%;
+            max-width: 272px;
+            img:nth-child(1) {
+                width: 100%;
+            }
             img:nth-child(2) {
                 position: absolute;
                 top: -50px;
                 left: -50px;
             }
             .employeeWorkExp {
-                width: 233px;
-                height: 137px;
+                width: 86%;
+                height: 38%;
                 position: absolute;
-                bottom: -47px;
-                left: 20px;
+                bottom: -14%;
+                left: 7%;
                 div:nth-child(1) {
                     width: 100%;
                     height: 93px;
