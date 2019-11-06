@@ -1,5 +1,32 @@
+@import './variables';
+
 .mapSection {
     width: 100%;
     height: 953px;
-    background-color: darkgray;
+    background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8 )), url('../../assets/images/bgMapSection.png') no-repeat;
+    padding-top: 285px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    .contactsSection {
+        width: 100%;
+        max-width: 589px;
+        height: 102px;
+        color: $colorYellowSand;
+        font-family: 'Yeseva One', serif;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 45px;
+        .contactsImg {
+            svg {
+                margin-right: 15px;
+            }
+        }
+    }
+    .mapBlock {
+        width: 100%;
+        max-width: 925px;
+        height: 465px;
+    }
 }
