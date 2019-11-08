@@ -10,7 +10,24 @@
     display: flex;
     justify-content: center;
     padding-top: 70px;
+    @media only screen and (max-width: 710px) {
+        padding-top: 0;
+        font-size: 22px;
+        width: 100%;
+        max-width: 710px;
+        padding-left: 5.1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 5.1%;
+        box-sizing: border-box;
+        background: #232323;
+    }
     .videoControl {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         color: $colorWhite;
         div {
             display: flex;
@@ -18,11 +35,17 @@
             align-items: center;
 
             margin-top: 10px;
+            margin-bottom: 30px;
         }
         .videoIframe {
             position: absolute;
             top: 50%;
             left: calc(50% - 409px);
+            @media only screen and (max-width: 710px) {
+                position: static;
+                width: 100%;
+                height: 207px;
+            }
         }
     }
 }
