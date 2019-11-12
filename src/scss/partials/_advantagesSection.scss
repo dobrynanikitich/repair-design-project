@@ -5,6 +5,9 @@
     padding-bottom: 452px;
     box-sizing: border-box;
     display: flex;
+    @media only screen and (max-width: 720px) {
+        display: none;
+    }
     .advantagesList {
         width: 60%;
         height: 658px; 
