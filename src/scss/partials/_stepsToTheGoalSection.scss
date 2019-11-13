@@ -10,6 +10,9 @@
     @media only screen and (max-width: 881px) {
         padding: 412px 0px 100px 0px;
     }
+    @media only screen and (max-width: 390px) {
+        display: none;
+    }
     .howWeWork {
         width: 200px;
         height: 40px;

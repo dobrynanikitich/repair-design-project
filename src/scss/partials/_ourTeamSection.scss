@@ -15,11 +15,24 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+    @media only screen and (max-width: 390px) {
+        box-sizing: border-box;
+        width: 100%;
+        padding-left: 5.1%;
+        padding-right: 5.1%;
+        padding-top: 70px;
+        height: 1860px;
+        background: #232323;
+    }
     h3 {
         color: white;
         padding: 0;
         margin: 0;
         padding-bottom: 15px;
+        @media only screen and (max-width: 390px) {
+            font-size: 22px;
+            font-family: 'YesevaOne-Regular', serif;
+        }
     }
     .outTeamLogoWrapper {
         display: flex;
@@ -37,16 +50,29 @@
         margin: 0;
         padding: 0;
         margin-bottom: 100px;
+        @media only screen and (max-width: 390px) {
+            font-size: 15px;
+        }
     }
     .ourTeamPhotoBlock {
         width: 100%;
         display: flex;
         justify-content: space-between;
         padding-bottom: 100px;
+        @media only screen and (max-width: 390px) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            height: 1425px;
+        }
         .employeeWrapper {
             position: relative;
             width: 100%;
             max-width: 272px;
+            @media only screen and (max-width: 390px) {
+                max-width: 304px;
+                height: 357px;
+            }
             img:nth-child(1) {
                 width: 100%;
             }
@@ -61,6 +87,13 @@
                 position: absolute;
                 bottom: -14%;
                 left: 7%;
+                @media only screen and (max-width: 390px) {
+                    width: 77%;
+                    height: 39%;
+                    position: absolute;
+                    bottom: -30%;
+                    left: 10%;
+                }
                 div:nth-child(1) {
                     width: 100%;
                     height: 93px;
@@ -78,8 +111,13 @@
                         font-size: 24px;
                         font-weight: bold;
                         padding-bottom: 10px;
+                        @media only screen and (max-width: 390px) {
+                            font-size: 18px;
+                            font-family: 'YesevaOne-Regular', serif;
+                        }
                     }
                     span {
+                        font-size: 18px;
                         color: gray;
                     }
                 }
@@ -90,6 +128,10 @@
                     box-sizing: border-box;
                     padding: 10px 5px;
                     font-size: 12px;
+                    @media only screen and (max-width: 390px) {
+                        font-size: 13px;
+                        font-family: 'YesevaOne-Regular', serif;
+                    }
                 }
             }
         }
@@ -109,6 +151,9 @@
             color: black;
             font-size: 20px;
             line-height: 1.9;
+        }
+        @media only screen and (max-width: 390px) {
+            display: none;
         }
     }
 }
