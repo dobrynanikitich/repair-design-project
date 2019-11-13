@@ -1,0 +1,81 @@
+@import './variables';
+@import './buttons';
+
+.mainFooter {
+    width: 100%;
+    min-height: 82px;
+    box-sizing: border-box;
+    padding-left: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: $colorBlack;
+
+    @media only screen and (max-width: 710px) {
+        width: 100%;
+        max-width: 710px;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+        min-height: 56px;
+    }
+    @media only screen and (max-width: 390px) {
+        display: none;
+    }
+
+    h1 {
+        font-family: 'Roboto', 'Lato', sans-serif;
+        color: $colorYellowSand;
+        font-size: $fontSize;
+        @media only screen and (max-width: 710px) {
+            font-size: 12px;
+        }   
+    }
+    a {
+        color: $colorYellowSand;
+        border-bottom: 1px solid $colorYellowSand;
+        @media only screen and (max-width: 710px) {
+            font-size: 12px;
+            border-bottom: none;
+        }   
+    }
+    .commonNav {
+        display: flex;
+        justify-content: space-between;
+
+        font-family: 'Roboto', 'Lato', sans-serif;
+        font-size: $fontSize;
+        color: $colorWhite;
+        @media only screen and (max-width: 710px) {
+            display: none;
+        }
+    }
+    .commonNav li {
+        padding: 1.5%;
+        &:hover {
+            cursor: pointer;
+            color: $colorYellowSand;
+        }
+    }
+    a {
+        @media only screen and (max-width: 1024px) {
+            display: none;
+        }
+        @media only screen and (max-width: 710px) {
+            display: block;
+            color: white;
+            text-decoration: none;
+        }
+    }
+    .commonBtns {
+        @media only screen and (max-width: 710px) {
+            display: none;
+        }
+    }
+}
+
+.active {
+    color: $colorYellowSand;
+}

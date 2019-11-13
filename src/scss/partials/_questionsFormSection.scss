@@ -6,6 +6,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media only screen and (max-width: 390px) {
+        height: 570px;
+        background: #232323;
+        box-sizing: border-box;
+        padding-left: 5.1%;
+        padding-right: 5.1%;
+    }
     .questionsFormWrapper {
         position: relative;
         top: 165px;
@@ -18,10 +25,23 @@
         align-items: center;
         padding-top: 15px;
         padding-bottom: 55px;
+        @media only screen and (max-width: 390px) {
+            width: 100%;
+            height: 100%;
+            background: #232323;
+            position: static;
+            padding-top: 45px;
+            padding-bottom: 0;
+        }
         h2 {
             color: white;
             margin: 0;
             margin-bottom: 30px;
+            @media only screen and (max-width: 390px) {
+                font-family: 'Yeseva One', serif;
+                font-style: normal;
+                font-size: 18px;
+            }
         }
         .questionsForm {
             width: 59%;
@@ -31,24 +51,39 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+            @media only screen and (max-width: 390px) {
+                width: 100%;
+                height: 100%;
+            }
             .nameAndPhoneForQuestion {
                 width: 100%;
                 height: 45px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                @media only screen and (max-width: 390px) {
+                    width: 100%;
+                    height: 205px;
+                    justify-content: space-around;
+                    display: flex;
+                    flex-direction: column;
+                }
                 div {
                     display: flex;
                     flex-direction: column;
                     width: 45%;
+                    @media only screen and (max-width: 390px) {
+                        width: 100%;
+                    }
                     label {
                         color: gray;
                         padding-bottom: 10px;
                     }
                     input {
                         border: none;
-                        background: black;
+                        background: transparent;
                         border-bottom: 1px solid white;
+                        padding-bottom: 8px;
                     }
                     ::-webkit-input-placeholder {
                         color: white;
@@ -66,8 +101,9 @@
                 }
                 input {
                     border: none;
-                    background: black;
+                    background: transparent;
                     border-bottom: 1px solid white;
+                    padding-bottom: 8px;
                 }
                 ::-webkit-input-placeholder {
                     color: white;
@@ -78,6 +114,66 @@
                 width: 100%;
                 display: flex;
                 justify-content: center;
+                @media only screen and (max-width: 710px) { 
+                    width: 100%;
+                }
+                input {
+                    @media only screen and (max-width: 710px) { 
+                        width: 100%;
+                    } 
+                }
+            }
+            .agreeLabel {
+                display: block;
+                position: relative;
+                padding-left: 35px;
+                margin-bottom: 12px;
+                cursor: pointer;
+                font-size: 14px;
+                user-select: none;
+                @media only screen and (max-width: 710px) { 
+                    width: 90%;
+                    color: white;
+                    font-size: 16px;
+                }
+            }
+            .agreeLabel input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+            .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 18px;
+                width: 18px;
+                background: url('../../assets/images/checkbox-icon.png');
+            }
+            .container:hover input ~ .checkmark {
+                background-color: gray;
+            }
+        
+            .container input:checked ~ .checkmark {
+                background-color: $colorYellowSand;
+            }
+          
+            .container input:checked ~ .checkmark:after {
+                display: block;
+            }
+          
+            .container .checkmark:after {
+                left: 9px;
+                top: 5px;
+                width: 5px;
+                height: 10px;
+                border: solid white;
+                border-width: 0 3px 3px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
             }
         }
         input[type='submit'] {
