@@ -2,7 +2,7 @@
 
 .examplesOfStylesSectionMobile {
     display: none;
-    @media only screen and (max-width: 390px) {
+    @media only screen and (max-width: 650px) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -23,8 +23,14 @@
         }
         .fantasiesSectionSliderMobile {
             position: absolute;
-            top: 110px;
-            left: 18px;
+            top: 48%;
+            left: 23%;
+            @media only screen and (max-width: 542px) {
+                left: 19%;
+            }
+            @media only screen and (max-width: 542px) {
+                left: 4.5%;
+            }
             .svgLeftArrowWrapper {
                 position: absolute;
                 top: 103px;

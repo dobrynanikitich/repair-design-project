@@ -6,13 +6,10 @@
     min-height: 82px;
     box-sizing: border-box;
     padding-left: 20px;
-
     display: flex;
     align-items: center;
     justify-content: space-around;
-
     background-color: $colorBlack;
-
     @media only screen and (max-width: 710px) {
         width: 100%;
         max-width: 710px;
@@ -20,13 +17,16 @@
         padding-left: 20px;
         padding-right: 20px;
         min-height: 56px;
+        box-sizing: border-box;
+        padding-right: 5.1%;
+        padding-left: 5.1%;
     }
-
     h1 {
         font-family: 'Roboto', 'Lato', sans-serif;
         color: $colorYellowSand;
         font-size: $fontSize;
         @media only screen and (max-width: 710px) {
+            font-family: 'FuturaDemiC';
             font-size: 12px;
         }   
     }

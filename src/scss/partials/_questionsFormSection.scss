@@ -84,10 +84,22 @@
                         background: transparent;
                         border-bottom: 1px solid white;
                         padding-bottom: 8px;
+                        color: white;
+                        &:focus {
+                            outline: none;
+                        }
+                        &:focus::-webkit-input-placeholder {
+                            opacity: 0; transition: opacity 0.3s ease;
+                            color: white;
+                        }
                     }
                     ::-webkit-input-placeholder {
                         color: white;
                         font-size: 15px;
+                        opacity: 1; transition: opacity 0.3s ease;
+                    }
+                    ::-webkit-inner-spin-button {
+                        display: none;
                     }
                 }
             }
@@ -104,6 +116,14 @@
                     background: transparent;
                     border-bottom: 1px solid white;
                     padding-bottom: 8px;
+                    color: white;
+                    &:focus {
+                        outline: none;
+                    }
+                    &:focus::-webkit-input-placeholder {
+                        opacity: 0; transition: opacity 0.3s ease;
+                        color: white;
+                    }
                 }
                 ::-webkit-input-placeholder {
                     color: white;
@@ -118,7 +138,12 @@
                     width: 100%;
                 }
                 input {
-                    @media only screen and (max-width: 710px) { 
+                    &:hover {
+                        background-color: white;
+                        color: $colorYellowSand;
+                        cursor: pointer;
+                    }
+                    @media only screen and (max-width: 710px) {
                         width: 100%;
                     } 
                 }

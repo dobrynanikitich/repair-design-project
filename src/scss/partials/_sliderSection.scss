@@ -91,6 +91,9 @@
             display: flex;
             width: 50%;
             justify-content: space-between;
+            &:hover {
+                cursor: pointer;
+            }
             @media only screen and (max-width: 710px) {
                 display: none;
             }
@@ -98,6 +101,9 @@
                 display: flex;
                 width: 30%;
                 justify-content: space-between;
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -127,10 +133,18 @@
             li {
                 height: 22px;
                 margin-right: 5%;
+                &:hover {
+                    cursor: pointer;
+                    color: $colorYellowSand;
+                    border-bottom: 1px solid $colorYellowSand;
+                }
             }
             .activeProject {
                 color: $colorYellowSand;
                 border-bottom: 1px solid $colorYellowSand;
+                @media only screen and (max-width: 895px) {
+                    border-bottom: none;
+                }
             }
         }
         .slider {
@@ -151,6 +165,27 @@
                 position: absolute;
                 right: 5px;
                 top: 44%;
+                svg {
+                    fill: white;
+                    stroke: white;
+                }
+                &:hover {
+                    background: white;
+                    cursor: pointer;
+                    svg {
+                        stroke: $colorYellowSand;
+                        fill: $colorYellowSand;
+                    }
+                }
+                svg {
+                    &:hover {
+                        svg {
+                            cursor: pointer;
+                            stroke: $colorYellowSand;
+                            fill: $colorYellowSand;
+                        }
+                    }  
+                }
             }
             div {
                 margin-right: 30px;

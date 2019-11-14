@@ -37,6 +37,23 @@
         .contactsImg {
             svg {
                 margin-right: 15px;
+                fill: $colorYellowSand;
+                circle {
+                    fill: $colorYellowSand;
+                }
+                path {
+                    stroke: white;
+                }
+                &:hover {
+                    cursor: pointer;
+                    fill: white;
+                    circle {
+                        fill: white;
+                    }
+                    path {
+                        stroke: $colorYellowSand;
+                    }
+                }
             }
         }
     }

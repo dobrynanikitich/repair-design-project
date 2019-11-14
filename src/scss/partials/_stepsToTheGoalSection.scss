@@ -46,7 +46,7 @@
             svg {
                 padding-right: 10px;
                 padding-top: 51px;
-                @media only screen and (max-width: 931px) {
+                @media only screen and (max-width: 1240px) {
                     display: none;
                 }
             }
@@ -75,6 +75,31 @@
             width: 287px;
             display: flex;
             justify-content: space-around;
+            svg {
+                fill: gray;
+                border: none;
+                stroke: gray;
+                &:hover {
+                    fill: white;
+                    stroke: white;
+                    cursor: pointer; 
+                } 
+            }
+            svg:nth-child(1) {
+                fill: white;
+                border: none;
+                stroke: white; 
+            }
+            svg:nth-child(2) {
+                fill: white;
+                border: none;
+                stroke: white; 
+            }
+            svg:last-child {
+                fill: white;
+                border: none;
+                stroke: white; 
+            }
         }
     }
     .sliderPagination {
@@ -100,6 +125,10 @@
                 width: 33%;
                 display: flex;
                 flex-direction: column;
+                &:hover {
+                    color: white;
+                    cursor: pointer; 
+                }
                 span:nth-child(1) {
                     padding-bottom: 10px;
                     text-decoration: underline;

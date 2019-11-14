@@ -78,6 +78,12 @@
                 color: white;
                 border-bottom: 1px solid white;
             }
+            &:focus {
+                outline: none;
+            }
+            &:focus::-webkit-input-placeholder {
+                opacity: 0; transition: opacity 0.3s ease;
+            }
         }
         label {
             color: gray;
@@ -86,8 +92,15 @@
                 font-weight: 600;
             }
         }
+        input {
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid white;
+            padding-bottom: 8px;
+        }
         ::-webkit-input-placeholder {
             color: black;
+            opacity: 1; transition: opacity 0.3s ease;
             @media only screen and (max-width: 710px) { 
                 color: white;
                 font-size: 18px;
@@ -100,6 +113,13 @@
         border: none;
         color: white;
         font-weight: bold;
+        &:hover {
+            box-sizing: border-box;
+            border: 1px solid $colorYellowSand;
+            background-color: white;
+            color: $colorYellowSand;
+            cursor: pointer;
+        }
         @media only screen and (max-width: 710px) {
             display: none;
         }

@@ -2,7 +2,7 @@
 
 .advantagesSection {
     width: 100%;
-    padding-bottom: 452px;
+    padding-bottom: 260px;
     box-sizing: border-box;
     display: flex;
     @media only screen and (max-width: 720px) {
@@ -58,6 +58,12 @@
                 background: black;
                 border-bottom: 1px solid gray;
                 color: white;
+                &:focus {
+                    outline: none;
+                }
+                &:focus::-webkit-input-placeholder {
+                    opacity: 0; transition: opacity 0.3s ease;
+                }
             }
             ::-webkit-input-placeholder {
                 color: white;
@@ -86,7 +92,7 @@
                 height: 18px;
                 width: 18px;
                 background-color: white;
-                border: 1px solid $colorYellowSand;   
+                background: url('../../assets/images/checkbox-icon.png');   
             }
             .container:hover input ~ .checkmark {
                 background-color: gray;
@@ -95,12 +101,6 @@
             .container input:checked ~ .checkmark {
                 background-color: $colorYellowSand;
           }
-          
-            // .checkmark:after {
-            //     content: "";
-            //     position: absolute;
-            //     display: none;
-            // }
           
             .container input:checked ~ .checkmark:after {
                 display: block;
@@ -128,6 +128,11 @@
                 border: none;
                 color: white;
                 align-self: flex-end;
+                &:hover {
+                    background-color: white;
+                    color: $colorYellowSand;
+                    cursor: pointer;
+                }
             }
         }
         .discountBlock {

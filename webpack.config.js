@@ -20,14 +20,17 @@ module.exports = {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
         use: [
           {
-              loader: 'file-loader?name=./assets/fonts/Roboto/[name].[ext]'
+              loader: 'file-loader?name=./assets/fonts/[name].[ext]'
           },
           {
-              loader: 'file-loader?name=./assets/fonts/Lato/[name].[ext]'
+              loader: 'file-loader?name=./assets/fonts/[name].[ext]'
           },
           {
-              loader: 'file-loader?name=./assets/fonts/YesevaOne/[name].[ext]'
-          }
+              loader: 'file-loader?name=./assets/fonts/[name].[ext]'
+          },
+          {
+            loader: 'file-loader?name=./assets/fonts/futurademic/[name].[ext]'
+        }
         ]
       },
       {
